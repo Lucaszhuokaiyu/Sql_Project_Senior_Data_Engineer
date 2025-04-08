@@ -1,0 +1,13 @@
+Project Proposal
+Name: Lucas Yu
+Project Name: Analyze the behavior of churned online game players
+Link to GitHub repository: https://github.com/Lucaszhuokaiyu?tab=repositories
+Job Description 
+The position I am applying for is Game Designer in Riot Games, this role involves analyzing gameplay and player behavior data to support decisions. As a gamer, I always wonder what the possible ways are to improve gameplay experience so players would love to stay. 
+Problem 
+The problem I aim to solve is: “What behavioral signals or gameplay patterns can help predict whether a player is likely to churn?” This problem is highly relevant to the role of a game data analyst because understanding early indicators of churn can help designers improve relevant game features so less players will quit the game.
+Data Sources 
+1.	Riot Games API link: https://developer.riotgames.com/, Use Python to access endpoint, and structured match data ideal for identifying player behaviors
+2.	Web Scraping Source: https://www.op.gg/, Use Python with BeautifulSoup to extract stats, make comparisons of individual player choices.
+Solution 
+Identify players who stopped playing and analyze traits like session frequency, win/loss rate, see if there are any correlations. Maybe create time-to-churn distribution graphs and visualize behavior difference between churned vs retained players.
