@@ -28,8 +28,8 @@ pg_engine = create_engine(pg_conn_str)
 # Read Active_Players table from MySQL and load into a DataFrame
 df = pd.read_sql('SELECT * FROM Active_Players', mysql_engine)
 # %%
-# Write DataFrame to postgres table in postgres
+# Write DataFrame to Data_Engineer_Project table in postgres
 df.to_sql('Active_Players', pg_engine, schema = 'raw', if_exists='replace', index=False)
 # %%
-print(f'{len(df)} records loaded into Postgres Active_Players table')
+print(f'{len(df)} records loaded into postgres Data_Engineer_Project table')
 # %%
