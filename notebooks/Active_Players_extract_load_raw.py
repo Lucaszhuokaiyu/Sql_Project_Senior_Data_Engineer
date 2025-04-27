@@ -33,3 +33,5 @@ df.to_sql('Active_Players', pg_engine, schema = 'raw', if_exists='replace', inde
 # %%
 print(f'{len(df)} records loaded into postgres Data_Engineer_Project table')
 # %%
+df
+# %%
