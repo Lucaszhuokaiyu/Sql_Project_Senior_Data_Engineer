@@ -8,13 +8,13 @@ from sqlalchemy import create_engine
 mysql_user = 'admin'
 mysql_password = 'isba_4715'
 mysql_host = 'isba-dev-01.cmb4w8cmqb26.us-east-1.rds.amazonaws.com'
-mysql_db = 'AWS RDS lmu-dev-01'
+mysql_db = 'Data_Engineer_Project'
 
 # Postgres database connection detail
 pg_user = 'postgres'
 pg_password = 'isba_4715'
 pg_host = 'isba-dev-02.cmb4w8cmqb26.us-east-1.rds.amazonaws.com'
-pg_db = 'postgres'
+pg_db = 'Data_Engineer_Project'
 
 # %%
 # Build connection strings
