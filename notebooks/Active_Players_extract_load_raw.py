@@ -31,7 +31,7 @@ df = pd.read_sql('SELECT * FROM Active_Players', mysql_engine)
 # Write DataFrame to data_engineer_project table in postgres
 df.to_sql('Active_Players', pg_engine, schema = 'raw', if_exists='replace', index=False)
 # %%
-print(f'{len(df)} records loaded into postgres Data_Engineer_Project table')
+print(f'{len(df)} records loaded into postgres data_engineer_project table')
 # %%
 df
 # %%

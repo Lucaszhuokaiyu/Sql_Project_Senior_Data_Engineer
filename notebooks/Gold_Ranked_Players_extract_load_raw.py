@@ -1,4 +1,4 @@
-#%%
+# %%
 import pandas as pd
 from sqlalchemy import create_engine
 
@@ -30,5 +30,6 @@ df = pd.read_sql('SELECT * FROM Gold_Ranked_Players', mysql_engine)
 # Write DataFrame to data_engineer_project table in postgres
 df.to_sql('Gold_Ranked_Players', pg_engine, schema = 'raw', if_exists='replace', index=False)
 # %%
-print(f'{len(df)} records loaded into Postgres Gold_Ranked_Players table')
+print(f'{len(df)} records loaded into postgres data_engineer_project table')
 # %%
+df
