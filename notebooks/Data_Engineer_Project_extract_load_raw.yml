@@ -35,8 +35,8 @@ jobs:
 
       - name: Extract and load Active_Players to raw schema 
         run: |
-          python notebooks/Active_Players_extract_load_raw.py
+          python notebooks/ActivePlayer_Web_Scrape_Code
 
       - name: Extract and load Gold_Ranked_Players to raw schema 
         run: |
-          python notebooks/Gold_Ranked_Players_extract_load_raw.py
+          python notebooks/LoL_Ranked_API_Code
