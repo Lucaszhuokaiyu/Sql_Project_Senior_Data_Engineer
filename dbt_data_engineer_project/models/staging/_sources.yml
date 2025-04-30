@@ -2,7 +2,6 @@ version: 2
 
 sources:
   - name: data_engineer_project
-    database: postgres
     schema: raw
     tables:
       - name: Active_Players
