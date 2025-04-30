@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: data_engineer_project
+    schema: raw
+    tables:
+      - name: Active_Players
+        columns:
+          - name: Month
+            description: Calendar month for the activity data
+          - name: Avg Monthly Players
+            description: Average number of monthly players
+          - name: Monthly Gain/Loss
+            description: Change in players compared to last month
+          - name: Peak Players
+            description: Highest concurrent player count in the month
