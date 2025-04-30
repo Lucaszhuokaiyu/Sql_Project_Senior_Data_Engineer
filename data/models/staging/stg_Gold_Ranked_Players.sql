@@ -1,6 +1,6 @@
 WITH raw_gold AS (
     SELECT *
-    FROM {{ source('data_engineer_project', 'gold_ranked_players') }}
+    FROM {{ source('data_engineer_project', 'Gold_Ranked_Players') }}
 ),
 stg_gold AS (
     SELECT
