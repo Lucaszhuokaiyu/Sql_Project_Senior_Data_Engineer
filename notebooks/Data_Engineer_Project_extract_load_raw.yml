@@ -1,4 +1,4 @@
-name: Run Basket Craft Extract and Load to Raw
+name: Run Active Players to Raw
 
 on:
   schedule:
