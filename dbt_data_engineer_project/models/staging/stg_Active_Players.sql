@@ -1,6 +1,6 @@
 WITH raw_active AS (
     SELECT *
-    FROM {{ source('data_engineer_project', 'active_players') }}
+    FROM {{ source('data_engineer_project', 'Active_Players') }}
 ),
 stg_active AS (
     SELECT
