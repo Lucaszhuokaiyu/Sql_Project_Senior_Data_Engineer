@@ -1,6 +1,6 @@
 WITH raw_gold AS (
     SELECT *
-    FROM {{ source('data_engineer_project', 'Gold_Ranked_Players') }}
+    FROM {{ source('data_engineer_project', 'gold_ranked_players') }}
 ),
 stg_gold AS (
     SELECT
@@ -9,8 +9,8 @@ stg_gold AS (
         losses,
         veteran,
         inactive,
-        freshBlood AS fresh_blood,
-        hotStreak AS hot_streak,
+        "freshBlood" AS fresh_blood,
+        "hotStreak" AS hot_streak,
         CURRENT_TIMESTAMP AS loaded_at
     FROM raw_gold
 )
