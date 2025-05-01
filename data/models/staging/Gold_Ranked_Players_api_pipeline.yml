@@ -6,7 +6,7 @@ sources:
     tables:
       - name: "Gold_Ranked_Players"
         columns:
-          - name: '"leagueId"'      # ← notice double quotes *inside* the string
+          - name: '"leagueId"'      
             description: Unique identifier for league entry
             tests:
               - not_null
