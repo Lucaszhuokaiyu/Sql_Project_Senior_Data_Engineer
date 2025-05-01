@@ -4,7 +4,7 @@ WITH raw_gold AS (
 ),
 stg_gold AS (
     SELECT
-        "leagueid" AS league_id,
+        "leagueId" AS league_id,
         wins,
         losses,
         veteran,
