@@ -1,4 +1,4 @@
-WITH base AS (
+WITH base AS ( 
     SELECT *
     FROM {{ ref('fct_Active_Players') }}
 )
@@ -7,5 +7,7 @@ SELECT
     avg_monthly_players,
     monthly_gain_loss,
     peak_players,
+    CURRENT_TIMESTAMP AS loaded_at
 FROM base
+
 
