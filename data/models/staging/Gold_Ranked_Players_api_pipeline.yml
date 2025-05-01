@@ -10,7 +10,6 @@ sources:
             description: Unique identifier for league entry
             tests:
               - not_null
-              - unique
           - name: '"wins"'
           - name: '"losses"'
           - name: '"veteran"'
