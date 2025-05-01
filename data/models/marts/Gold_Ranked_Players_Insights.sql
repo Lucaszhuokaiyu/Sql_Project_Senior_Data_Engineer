@@ -23,7 +23,9 @@ aggregated AS (
             SUM(CASE WHEN fresh_blood THEN 1 ELSE 0 END)::numeric 
             / NULLIF(COUNT(*), 0), 2
         ) AS pct_new_players
-        CURRENT_TIMESTAMP AS loaded_at
     FROM base
 )
-SELECT * FROM aggregated
+SELECT 
+    *,
+    CURRENT_TIMESTAMP AS loaded_at
+FROM aggregated
