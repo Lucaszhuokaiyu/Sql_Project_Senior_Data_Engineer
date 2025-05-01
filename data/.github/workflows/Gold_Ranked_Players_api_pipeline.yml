@@ -33,6 +33,6 @@ jobs:
           pip install -r requirements.txt
           pip install papermill
 
-      - name: Run API pipeline notebook
+      - name: Run api notebook
         run: |
           papermill data/Gold_Ranked_Players_api_extract_load_raw.ipynb data/output_api.ipynb
