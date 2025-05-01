@@ -33,6 +33,7 @@ jobs:
           pip install -r requirements.txt
           pip install papermill
 
-      - name: Run api notebook
+      - name: Run web scrape notebook
         run: |
-          papermill data/Gold_Ranked_Players_api_extract_load_raw.ipynb data/output_api.ipynb
+          papermill notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb notebooks/output_scrape.ipynb
+        
