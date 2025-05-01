@@ -9,7 +9,7 @@ aggregated AS (
         -- Counts
         SUM(CASE WHEN veteran = 'true' THEN 1 ELSE 0 END) AS veteran_count,
         SUM(CASE WHEN inactive = 'true' THEN 1 ELSE 0 END) AS inactive_count,
-        SUM(CASE WHEN fresh_blood = 'true' THEN 1 ELSE 0 END) AS new_players_count
+        SUM(CASE WHEN fresh_blood = 'true' THEN 1 ELSE 0 END) AS new_players_count,
         -- Percentages
         ROUND(
             SUM(CASE WHEN veteran = 'true' THEN 1 ELSE 0 END)::numeric 
