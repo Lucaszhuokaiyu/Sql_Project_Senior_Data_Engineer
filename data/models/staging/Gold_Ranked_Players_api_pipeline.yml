@@ -15,5 +15,5 @@ sources:
           - name: losses
           - name: veteran
           - name: inactive
-          - name: "freshBlood"
-          - name: "hotStreak"
+          - name: freshBlood
+          - name: hotStreak
