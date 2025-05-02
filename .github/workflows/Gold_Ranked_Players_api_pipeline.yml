@@ -33,15 +33,8 @@ jobs:
           pip install -r requirements.txt
           pip install papermill
 
-      - name: Add kernel metadata to Gold Ranked notebook
+      - name: Add kernel to Gold Ranked Players notebook
         run: |
-            python -c "
-            import nbformat
-            nb = nbformat.read('notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb', as_version=4)
-            nb['metadata']['kernelspec'] = {
-            'display_name': 'Python 3',
-            'language': 'python',
-            'name': 'python3'}
-            nbformat.write(nb, 'notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb')
-            "
+            python -c "import nbformat; nb = nbformat.read('notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb', as_version=4); nb['metadata']['kernelspec'] = {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'}; nbformat.write(nb, 'notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb')"
+        
         
