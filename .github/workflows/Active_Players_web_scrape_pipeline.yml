@@ -35,4 +35,4 @@ jobs:
 
       - name: Run web scrape notebook
         run: |
-          papermill notebooks/Active_Players_Web_Scrape_Extract_Load_Raw.py notebooks/output_scrape.py
+          papermill notebooks/Active_Players_web_scrape_extract_load_raw.ipynb notebooks/output_scrape.ipynb

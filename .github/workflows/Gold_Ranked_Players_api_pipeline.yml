@@ -35,4 +35,4 @@ jobs:
 
       - name: Run API pipeline notebook
         run: |
-          papermill notebooks/Gold_Ranked_Players_API_Extract_Load_Raw.py notebooks/output_api.py
+          papermill notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb notebooks/output_api.ipynb
