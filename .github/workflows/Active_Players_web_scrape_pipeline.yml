@@ -33,6 +33,15 @@ jobs:
           pip install -r requirements.txt
           pip install papermill
 
-      - name: Run web scrape notebook
+      - name: Add kernel to Active Players notebook
+        run: |
+          python -c "import nbformat; \
+          nb = nbformat.read('notebooks/Active_Players_web_scrape_extract_load_raw.ipynb', as_version=4); \
+          nb['metadata']['kernelspec'] = {'display_name': 'Python 3', 'language': 'python','name': 'python3'}; \
+          nbformat.write(nb, 'notebooks/Active_Players_web_scrape_extract_load_raw.ipynb')"
+
+      - name: Run Active Players web scrape notebook
         run: |
           papermill notebooks/Active_Players_web_scrape_extract_load_raw.ipynb notebooks/output_scrape.ipynb
+        
+        

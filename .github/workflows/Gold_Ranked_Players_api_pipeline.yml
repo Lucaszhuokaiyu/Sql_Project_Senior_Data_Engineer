@@ -16,7 +16,7 @@ env:
   PG_DB:         ${{ secrets.PG_DB }}
 
 jobs:
-  run_api_pipeline:
+  run_api:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,6 +33,13 @@ jobs:
           pip install -r requirements.txt
           pip install papermill
 
-      - name: Run API pipeline notebook
+      - name: Add kernel to Gold Ranked Players notebook
+        run: |
+          python -c "import nbformat; \
+          nb = nbformat.read('notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb', as_version=4); \
+          nb['metadata']['kernelspec'] = {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'}; \
+          nbformat.write(nb, 'notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb')"
+
+      - name: Run Gold Ranked Players API notebook
         run: |
           papermill notebooks/Gold_Ranked_Players_api_extract_load_raw.ipynb notebooks/output_api.ipynb
