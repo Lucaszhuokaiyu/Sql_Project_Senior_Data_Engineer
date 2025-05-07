@@ -1,4 +1,4 @@
-# The query results were exported into four separate CSV files, all of which are saved in the reports/ folder of the project repository. 
+# The query results were exported into four separate CSV files, all of which are saved in the report/ folder of the project repository. 
 The Python script used to run the queries and generate these CSV files is included as query_analysis_load_to_csv.py in the same directory. 
 All visualizations were created using Looker Studio by connecting directly to a PostgreSQL database hosted in the GitHub Codespace environment.
 For the Gold_Ranked_Players data source, two custom fields were created within Looker Studio: one to classify players by type (Player Type) 
